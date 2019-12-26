@@ -86,7 +86,7 @@ class MPD
       #
       # @return [Hash] Current MPD status.
       def status
-        send_command :status
+        send_command :status || {}
       end
 
       # Statistics.
